@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import SlideShow from "./components/Banner/SlideShow";
+import Clients from "./components/Clients/Clients";
+import Community from "./components/Community/Community";
+import Achievements from "./components/Achievements/Achievements";
+import Calender from "./components/Calender/Calender";
+import Customer from "./components/Customer/Customer";
+import Mkt from "./components/Mkt/Mkt";
+import EndContainer from "./components/EndContainer/EndContainer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <SlideShow />
+      <Clients />
+      <Community />
+      <Achievements />
+      <Calender />
+      <Customer />
+      <Mkt />
+      <EndContainer />
+      <Footer />
+    </>
   );
 }
 
